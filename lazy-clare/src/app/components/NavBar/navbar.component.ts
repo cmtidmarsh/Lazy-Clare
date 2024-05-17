@@ -3,18 +3,34 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'nav-bar',
   standalone: true,
-  imports: [],
+
   template: `
     <div id="navbar-container">
       <nav
         class=" container border border-neutral-950 bg-componentGrey rounded-md shadow-lg mx-auto px-6 py-3  "
       >
-        <div class="flex justify-between items-center">
-          <a href="#" class="text-2xl font-bold text-white hover:text-pink-300"
-            >Lazy Clare</a
+        <div id="navContent" class="flex justify-between items-center ">
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class=" border border-neutral-500 bg-gray-700 rounded-lg shadow-lg text-2xl font-bold text-white hover:text-pink-30 px-2 py-2"
+              >Lazy Clare</a
+            >
+            <div class="flex items-end text-white text-sm">INPUT HERE</div>
+          </div>
+          <div
+            id="navLinksContainer"
+            class="hidden md:flex items-center space-x-4"
           >
+            <!-- <button
+              id="dropDownBtn"
+              class="border border-white bg-gray-700 rounded-lg shadow-lg "
+            >
+              <div class="text-white hover:text-purple-300 mx-2">
+                Drop down 1
+              </div>
+            </button> -->
 
-          <div class="hidden md:flex items-center space-x-4">
             <a href="#" class="text-white hover:text-purple-300">Weekly TODO</a>
             <a href="#" class="text-white hover:text-purple-300"
               >Food Tracking</a

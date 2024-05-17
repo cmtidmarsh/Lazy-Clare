@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/NavBar/navbar.component';
 import { HeaderComponent } from './containers/Header/Header.component';
-import { MainContentComponent } from './containers/Main Content/Main-Content.component';
+import { MainContentComponent } from './containers/Generic-Main-Content/Main-Content.component';
 
 @Component({
   selector: 'app-root',
